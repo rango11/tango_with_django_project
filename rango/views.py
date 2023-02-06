@@ -42,7 +42,7 @@ def show_category(request, category_name_slug):
         context_dict['pages'] = pages
         #We also add the category object from the database to the context dictionary.
         #We'll use this in the template to verify that the category exists.
-        context_dict['category'] = categroy
+        context_dict['category'] = category
     except Category.DoesNotExist:
         #We get here if we didn't find the specifies category.
         #Don't do anything -
